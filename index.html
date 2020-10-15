@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shephy JS</title>
+    <link href="app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="world">
+      <div id="sheepStock">
+        Sheep stocks:
+        <div id="チャット利用者ストック1" class="stacked cards"></div>
+        <div id="チャット利用者ストック3" class="stacked cards"></div>
+        <div id="チャット利用者ストック10" class="stacked cards"></div>
+        <div id="チャット利用者ストック30" class="stacked cards"></div>
+        <div id="チャット利用者ストック100" class="stacked cards"></div>
+        <div id="チャット利用者ストック300" class="stacked cards"></div>
+        <div id="チャット利用者ストック1000" class="stacked cards"></div>
+      </div>
+      <div id="enemySheepCount">Enemy: <span class="count"></span></div>
+      <div id="field">Field: <span class="cards"></span></div>
+      <div id="hand">Hand: <span class="cards"></span></div>
+      <div id="deck">Deck: <span class="tightly lined cards"></span></div>
+      <div id="discardPile">Discard pile: <span class="loosely lined cards"></span></div>
+      <div id="exile">Exile: <span class="loosely lined cards"></span></div>
+    </div>
+    <div id="console">
+      <div id="message"></div>
+      <div id="moves"></div>
+    </div>
+    <div id="preferencePane">
+      <div id="playerTypeForm">
+        <label>
+          Player:
+          <select id="playerType">
+            <option value="human" selected>Human</option>
+            <option value="random">Random AI</option>
+            <option value="minimax">Minimax AI</option>
+          </select>
+        </label>
+      </div>
+      <button id="startButton">Start a new game</button>
+    </div>
+    <script src="vendor/jquery/jquery-2.0.3.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
